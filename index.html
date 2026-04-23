@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>드립백 가이드 | ドリップバッグガイド</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --text: #222222;
+      --subtext: #666666;
+      --line: #e7e1d8;
+      --accent: #6f4e37;
+      --accent-soft: #f1ebe3;
+      --shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+      --radius: 18px;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans KR", "Hiragino Sans", "Yu Gothic", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 32px 24px;
+      margin-bottom: 24px;
+      border: 1px solid var(--line);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--subtext);
+      font-size: 1rem;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 14px 16px;
+      background: #fcfaf7;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: #444;
+      font-size: 0.98rem;
+    }
+
+    .section {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      padding: 24px 20px;
+      margin-bottom: 18px;
+    }
+
+    .step {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+      line-height: 1.35;
+    }
+
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .lang-box {
+      padding: 16px;
+      border-radius: 14px;
+      background: #fcfbf9;
+      border: 1px solid var(--line);
+      min-width: 0;
+    }
+
+    .lang-title {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .lang-box p {
+      margin: 0;
+      color: var(--text);
+    }
+
+    .summary {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      padding: 24px 20px;
+      margin-top: 28px;
+    }
+
+    .summary ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    .summary li + li {
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--subtext);
+      font-size: 0.92rem;
+      margin-top: 28px;
+      padding-bottom: 16px;
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 20px, var(--max-width));
+        padding-top: 20px;
+      }
+
+      .hero {
+        padding: 24px 18px;
+        border-radius: 20px;
+      }
+
+      .section,
+      .summary {
+        padding: 20px 16px;
+      }
+
+      .lang-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .lang-box {
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">Coffee Guide</div>
+      <h1>드립백 가이드<br />ドリップバッグガイド</h1>
+      <p class="subtitle">
+        집에서도 쉽게 따라 할 수 있는 드립백 추출 방법을 한국어와 일본어로 정리했습니다.
+      </p>
+      <div class="notice">
+        진하게 느껴지면 마지막에 물을 조금씩 추가해서 농도를 맞추면 됩니다.
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="step">STEP 1</div>
+      <h2>드립백을 컵에 고정하기 / ドリップバッグをカップにセットする</h2>
+      <div class="lang-grid">
+        <div class="lang-box">
+          <div class="lang-title">한국어</div>
+          <p>
+            드립백 포장을 뜯은 뒤, 양쪽 걸이를 펼쳐 컵 위에 단단히 고정합니다.
+            커피가 한쪽으로 치우치지 않게 가운데에 잘 위치시키는 것이 좋습니다.
+          </p>
+        </div>
+        <div class="lang-box">
+          <div class="lang-title">日本語</div>
+          <p>
+            ドリップバッグを開封し、両側のフックを広げてカップにしっかり固定します。
+            コーヒーが片寄らないように、中央に安定してセットしてください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="step">STEP 2</div>
+      <h2>물 준비 / お湯の準備</h2>
+      <div class="lang-grid">
+        <div class="lang-box">
+          <div class="lang-title">한국어</div>
+          <p>
+            물은 끓인 뒤 바로 사용하거나, 너무 뜨겁다고 느껴지면 잠시만 식혀서 사용합니다.
+            전체 추출에 필요한 물은 대략 210~220g 정도를 기준으로 생각하면 편합니다.
+          </p>
+        </div>
+        <div class="lang-box">
+          <div class="lang-title">日本語</div>
+          <p>
+            お湯は沸騰後そのまま使ってもよく、熱すぎると感じる場合は少しだけ冷ましてから使います。
+            抽出に使うお湯の量は、目安として合計210〜220gほどです。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="step">STEP 3</div>
+      <h2>뜸 들이기 / 蒸らし</h2>
+      <div class="lang-grid">
+        <div class="lang-box">
+          <div class="lang-title">한국어</div>
+          <p>
+            먼저 35~45g 정도의 물을 천천히 부어 커피 전체를 적십니다.
+            그다음 약 40초 정도 기다리면서 커피가 충분히 부풀고 가스를 배출하도록 합니다.
+          </p>
+        </div>
+        <div class="lang-box">
+          <div class="lang-title">日本語</div>
+          <p>
+            最初に35〜45gほどのお湯をゆっくり注ぎ、粉全体をしっかり湿らせます。
+            そのあと約40秒待ち、コーヒーがふくらみながらガスを抜けるようにします。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="step">STEP 4</div>
+      <h2>본 추출 / 本抽出</h2>
+      <div class="lang-grid">
+        <div class="lang-box">
+          <div class="lang-title">한국어</div>
+          <p>
+            뜸 들이기가 끝나면 나머지 물을 천천히 나누어 부어 총량이 210~220g 정도가 되도록 맞춥니다.
+            한 번에 너무 많이 붓기보다는 천천히 안정적으로 붓는 것이 좋습니다.
+          </p>
+        </div>
+        <div class="lang-box">
+          <div class="lang-title">日本語</div>
+          <p>
+            蒸らしが終わったら、残りのお湯をゆっくり数回に分けて注ぎ、
+            合計量が210〜220gほどになるように調整します。
+            一度にたくさん注ぐより、ゆっくり安定して注ぐのがおすすめです。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="step">STEP 5</div>
+      <h2>완료 및 농도 조절 / 完成と濃さの調整</h2>
+      <div class="lang-grid">
+        <div class="lang-box">
+          <div class="lang-title">한국어</div>
+          <p>
+            물이 모두 내려가면 바로 마실 수 있습니다.
+            맛이 진하게 느껴지면 물을 5g 정도씩 추가하면서 원하는 농도로 맞추면 됩니다.
+          </p>
+        </div>
+        <div class="lang-box">
+          <div class="lang-title">日本語</div>
+          <p>
+            お湯がすべて落ちきったら、そのまま飲めます。
+            濃いと感じた場合は、お湯を5gずつ足しながら好みの濃さに調整してください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div class="step">QUICK SUMMARY</div>
+      <h2>간단 요약 / かんたんまとめ</h2>
+      <ul>
+        <li>드립백을 컵 위에 안정적으로 고정한다.</li>
+        <li>처음에는 소량의 물로 전체를 적시고 40초 정도 기다린다.</li>
+        <li>이후 천천히 물을 더 부어 총 210~220g 정도로 맞춘다.</li>
+        <li>진하면 마지막에 물을 조금씩 추가해 농도를 조절한다.</li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2026 Coffee Guide
+    </footer>
+  </main>
+</body>
+</html>
